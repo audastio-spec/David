@@ -1,0 +1,6 @@
+# Netlify configuration — static HTML site, no build step.
+# Publishes the repository root as-is.
+[build]
+  publish = "."
+
+# Netlify Forms are detected automatically from the static <form name="contact" netlify> in contact.html.

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — David Frederick</title>
+<meta name="description" content="Get in touch with David Frederick — for speaking engagements, book events, press, and reader notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #f6f1e8; color: #1b2838; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden; }
+  a { color: inherit; }
+  ::selection { background: #b58a44; color: #fff; }
+
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+  header.nav { position: sticky; top: 0; z-index: 50; background: rgba(246,241,232,0.9); backdrop-filter: saturate(150%) blur(9px); -webkit-backdrop-filter: saturate(150%) blur(9px); border-bottom: 1px solid rgba(27,40,56,0.12); }
+  header.nav .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 40px; max-width: 1280px; margin: 0 auto; }
+  .logo { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 22px; color: #1b2838; text-decoration: none; letter-spacing: .01em; }
+  nav.links { display: flex; align-items: center; gap: 30px; }
+  nav.links a { font-size: 14px; letter-spacing: .03em; color: #6b665d; text-decoration: none; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color .2s; }
+  nav.links a:hover { color: #1b2838; }
+  nav.links a.active { color: #1b2838; border-bottom-color: #b58a44; }
+  nav.links a.cta { font-size: 13px; letter-spacing: .04em; color: #1b2838; border: 1px solid rgba(27,40,56,0.25); padding: 9px 16px; border-radius: 2px; border-bottom-width: 1px; }
+  nav.links a.cta:hover { background: #1b2838; color: #f6f1e8; border-color: #1b2838; }
+
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #9a4434; }
+  h1.title { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(44px,6vw,84px); line-height: 1; letter-spacing: -0.02em; margin: 26px 0 24px; color: #1b2838; }
+  .lede { font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: clamp(19px,2vw,24px); line-height: 1.5; color: #34404d; max-width: 40ch; margin: 0; }
+
+  .grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(40px,5vw,80px); align-items: start; padding: clamp(48px,6vw,80px) 0 clamp(64px,8vw,110px); }
+  .side h2 { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 24px; line-height: 1.2; margin: 0 0 20px; color: #1b2838; }
+  .side p { font-size: 16px; line-height: 1.75; color: #4a4740; margin: 0 0 26px; max-width: 36ch; }
+  .side .label { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #9a9388; margin: 0 0 6px; }
+  .side .links-list { display: flex; flex-direction: column; gap: 11px; margin-bottom: 30px; }
+  .side .links-list a { font-size: 16px; color: #1b2838; text-decoration: none; border-bottom: 1px solid rgba(27,40,56,0.2); padding-bottom: 2px; width: fit-content; transition: color .2s, border-color .2s; }
+  .side .links-list a:hover { color: #9a4434; border-color: #9a4434; }
+
+  form.contact { background: #fff; border: 1px solid rgba(27,40,56,0.12); padding: clamp(28px,3.4vw,48px); box-shadow: 0 36px 70px -40px rgba(27,40,56,0.4); }
+  .field { margin-bottom: 22px; }
+  .field label { display: block; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #6b665d; margin-bottom: 9px; }
+  .field input, .field select, .field textarea { width: 100%; font-family: inherit; font-size: 16px; color: #1b2838; background: #faf7f0; border: 1px solid rgba(27,40,56,0.2); border-radius: 2px; padding: 14px 15px; transition: border-color .2s, background .2s; }
+  .field textarea { min-height: 150px; resize: vertical; line-height: 1.6; }
+  .field input::placeholder, .field textarea::placeholder { color: #a8a298; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: #9a4434; background: #fff; }
+  .field select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231b2838' d='M1 1l5 5 5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+  .submit { display: inline-flex; align-items: center; gap: 10px; background: #1b2838; color: #f6f1e8; font-size: 14px; letter-spacing: .04em; border: none; border-radius: 2px; padding: 16px 30px; cursor: pointer; transition: background .2s; font-family: inherit; }
+  .submit:hover { background: #9a4434; }
+  .hp { position: absolute; left: -9999px; }
+  .note { font-size: 13px; line-height: 1.6; color: #8a857b; margin: 18px 0 0; }
+
+  .feedback { display: none; padding: 28px 30px; border-radius: 2px; }
+  .feedback.success { display: none; background: #16222f; color: #f0ece2; }
+  .feedback.success h3 { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 26px; margin: 0 0 10px; }
+  .feedback.success p { font-size: 15px; line-height: 1.7; color: rgba(240,236,226,0.78); margin: 0; }
+  .errmsg { display: none; margin-top: 16px; font-size: 14px; color: #9a4434; }
+
+  footer.foot { background: #13202c; color: rgba(240,236,226,0.7); }
+  footer.foot .inner { max-width: 1280px; margin: 0 auto; padding: 72px 40px 40px; }
+  footer.foot .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; padding-bottom: 54px; border-bottom: 1px solid rgba(240,236,226,0.14); }
+  footer.foot .brand { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 26px; color: #f0ece2; margin-bottom: 16px; }
+  footer.foot p { font-size: 15px; line-height: 1.7; max-width: 34ch; margin: 0; }
+  footer.foot .ftitle { font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(240,236,226,0.5); margin-bottom: 20px; }
+  footer.foot .fcol { display: flex; flex-direction: column; gap: 13px; }
+  footer.foot .fcol a { font-size: 15px; color: rgba(240,236,226,0.82); text-decoration: none; }
+  footer.foot .fcol a:hover { color: #cf9a52; }
+  footer.foot .legal { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; padding-top: 28px; font-size: 13px; letter-spacing: .02em; color: rgba(240,236,226,0.5); }
+
+  @media (max-width: 880px) {
+    .grid, footer.foot .cols { grid-template-columns: 1fr; }
+    .wrap, header.nav .row, footer.foot .inner { padding-left: 22px; padding-right: 22px; }
+  }
+  @media (max-width: 600px) {
+    header.nav .row { flex-direction: column; justify-content: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
+    nav.links { gap: 18px; }
+    nav.links a.cta { display: none; }
+    .logo { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Hidden static form for Netlify build-time detection -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="reason" />
+    <textarea name="message"></textarea>
+  </form>
+
+  <header class="nav">
+    <div class="row">
+      <a href="index.html" class="logo">David&nbsp;Frederick</a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="books.html">Books</a>
+        <a href="essays.html">Essays</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="https://substack.com/@davidfrederick498768" target="_blank" rel="noopener" class="cta">Substack&nbsp;↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" style="padding-top:54px;">
+      <div class="eyebrow">Contact</div>
+      <h1 class="title">Get in touch.</h1>
+      <p class="lede">For speaking engagements, book events, press, or simply to share what a story left with you — I read every note.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="grid">
+        <div class="side">
+          <h2>Let's talk.</h2>
+          <p>Whether you're a bookstore, university, festival, diaspora organization, or book club — or an agent, editor, or reader — this reaches me directly.</p>
+
+          <div class="label">Email</div>
+          <div class="links-list">
+            <a href="mailto:Fdavid.dreamer@gmail.com">Fdavid.dreamer@gmail.com</a>
+          </div>
+
+          <div class="label">Elsewhere</div>
+          <div class="links-list">
+            <a href="https://substack.com/@davidfrederick498768" target="_blank" rel="noopener">Substack ↗</a>
+            <a href="https://www.instagram.com/cws_markswecarry" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="https://www.linkedin.com/in/davidfred/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+
+          <div class="label">Response</div>
+          <p style="margin-bottom:0;">I do my best to reply within a few days. For time-sensitive events, please note your date in the message.</p>
+        </div>
+
+        <div>
+          <form class="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="reason">Reason for reaching out</label>
+              <select id="reason" name="reason">
+                <option>General inquiry</option>
+                <option>Speaking engagement</option>
+                <option>Book event or book club</option>
+                <option>Order or signed-copy question</option>
+                <option>Press &amp; media</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me a little about your event, request, or note…" required></textarea>
+            </div>
+            <button type="submit" class="submit">Send message <span>↗</span></button>
+            <p class="errmsg" id="formError">Something went wrong sending your message. Please email Fdavid.dreamer@gmail.com directly.</p>
+            <p class="note">This form is handled securely by Netlify. No account needed — your message comes straight to David.</p>
+          </form>
+
+          <div class="feedback success" id="formSuccess">
+            <h3>Thank you — your message is on its way.</h3>
+            <p>I appreciate you reaching out. I'll get back to you at the email you provided, usually within a few days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="inner">
+      <div class="cols">
+        <div>
+          <div class="brand">David Frederick</div>
+          <p>Writer, author, and podcaster exploring Haiti, memory, migration, and the marks people leave behind.</p>
+        </div>
+        <div>
+          <div class="ftitle">Explore</div>
+          <div class="fcol">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="books.html">Books</a>
+            <a href="essays.html">Essays</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="ftitle">Follow</div>
+          <div class="fcol">
+            <a href="mailto:Fdavid.dreamer@gmail.com">Email ↗</a>
+            <a href="https://substack.com/@davidfrederick498768" target="_blank" rel="noopener">Substack ↗</a>
+            <a href="https://www.instagram.com/cws_markswecarry" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="https://www.linkedin.com/in/davidfred/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="legal">
+        <div>© <span id="year">2026</span> David Frederick. All rights reserved.</div>
+        <div>Saint-Marc, Haiti · United States</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Preselect reason from ?reason=speaking (e.g. from "Book David to speak" buttons)
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var r = (params.get('reason') || '').toLowerCase();
+      if (r) {
+        var map = { speaking: 'Speaking engagement', book: 'Book event or book club', order: 'Order or signed-copy question', press: 'Press & media' };
+        var target = map[r];
+        if (target) {
+          var sel = document.getElementById('reason');
+          for (var i = 0; i < sel.options.length; i++) {
+            if (sel.options[i].text === target) { sel.selectedIndex = i; break; }
+          }
+        }
+      }
+    })();
+
+    // AJAX submit so the visitor stays on the page and sees a thank-you
+    var form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var body = new URLSearchParams(data).toString();
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+        .then(function (res) {
+          if (!res.ok) throw new Error('bad status');
+          form.style.display = 'none';
+          var ok = document.getElementById('formSuccess');
+          ok.style.display = 'block';
+          ok.scrollIntoView({ block: 'center' });
+        })
+        .catch(function () {
+          document.getElementById('formError').style.display = 'block';
+        });
+    });
+  </script>
+</body>
+</html>
