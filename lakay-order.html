@@ -17,7 +17,7 @@
   <main class="wrap">
     <div class="eyebrow">Signed paperback · Cash App</div>
     <h1>Order your copy of <em>Lakay.</em></h1>
-    <p class="lede">Enter your shipping details here, then pay through David Frederick’s Cash App Business profile. One signed paperback is $24.</p>
+    <p class="lede">Enter your shipping details here, then pay through David Frederick’s Cash App Business profile. One signed paperback is $24, plus $5 shipping — $29 total.</p>
     <div class="grid">
       <div>
         <form class="card" name="lakay-cashapp-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="orderForm">
@@ -25,7 +25,9 @@
           <input type="hidden" name="form-name" value="lakay-cashapp-order">
           <input type="hidden" name="order-reference" id="orderReference">
           <input type="hidden" name="item" value="Lakay signed paperback">
-          <input type="hidden" name="amount-usd" value="24">
+          <input type="hidden" name="book-price-usd" value="24">
+          <input type="hidden" name="shipping-usd" value="5">
+          <input type="hidden" name="amount-usd" value="29">
           <p class="hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="field"><label for="buyerName">Full name</label><input id="buyerName" name="name" autocomplete="name" maxlength="120" required></div>
           <div class="field"><label for="buyerEmail">Email</label><input id="buyerEmail" name="email" type="email" autocomplete="email" maxlength="254" required></div>
@@ -41,12 +43,12 @@
         <div class="card success" id="orderSuccess" role="status" aria-live="polite">
           <h2>Details saved. Now pay with Cash App.</h2>
           <p>Your order reference is <span class="reference" id="displayReference"></span>. Keep this page open until you finish payment.</p>
-          <ol class="steps"><li>Open David Frederick’s Cash App Business profile using the button below. Confirm the recipient is <strong>$thegent3</strong>.</li><li>Enter <strong>$24</strong> for one signed paperback. Add your order reference in the payment note if Cash App offers one.</li><li>David will match the Cash App payment with the shipping details you just entered before shipping.</li></ol>
-          <a class="button cash" href="https://cash.app/$thegent3" target="_blank" rel="noopener noreferrer">Open Cash App to pay $24 ↗</a>
+          <ol class="steps"><li>Open David Frederick’s Cash App Business profile using the button below. Confirm the recipient is <strong>$thegent3</strong>.</li><li>Enter <strong>$29 total</strong> ($24 book + $5 shipping). Add your order reference in the payment note if Cash App offers one.</li><li>David will match the Cash App payment with the shipping details you just entered before shipping.</li></ol>
+          <a class="button cash" href="https://cash.app/$thegent3" target="_blank" rel="noopener noreferrer">Open Cash App to pay $29 ↗</a>
           <p class="fine">Your order is awaiting payment. Saving this form does not charge you or confirm a purchase. Questions? <a href="mailto:Fdavid.dreamer@gmail.com">Email David</a>.</p>
         </div>
       </div>
-      <aside><div class="summary"><h2>Order summary</h2><p><em>Lakay</em> · one personally signed paperback</p><strong>$24 USD</strong><p>Cash App payment is made in a separate step.</p></div><p class="fine">Card checkout is temporarily unavailable while Stripe reviews the account. David confirms each Cash App payment manually.</p></aside>
+      <aside><div class="summary"><h2>Order summary</h2><p><em>Lakay</em> · one personally signed paperback</p><p>Book: $24 USD<br>Shipping: $5 USD</p><strong>Total: $29 USD</strong><p>Cash App payment is made in a separate step.</p></div><p class="fine">Card checkout is temporarily unavailable while Stripe reviews the account. David confirms each Cash App payment manually.</p></aside>
     </div>
   </main>
   <footer><div class="wrap"><span>© <span id="year"></span> David Frederick</span><a href="contact.html">Contact David</a></div></footer>
