@@ -82,14 +82,6 @@
 </head>
 <body>
 
-  <!-- Hidden static form for Netlify build-time detection -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <input type="text" name="reason" />
-    <textarea name="message"></textarea>
-  </form>
-
   <header class="nav">
     <div class="row">
       <a href="index.html" class="logo">David&nbsp;Frederick</a>
@@ -136,7 +128,7 @@
         <div>
           <form class="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
             <input type="hidden" name="form-name" value="contact" />
-            <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+            <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
 
             <div class="field">
               <label for="name">Name</label>
@@ -162,7 +154,7 @@
             </div>
             <button type="submit" class="submit">Send message <span>↗</span></button>
             <p class="errmsg" id="formError">Something went wrong sending your message. Please email Fdavid.dreamer@gmail.com directly.</p>
-            <p class="note">This form is handled securely by Netlify. No account needed — your message comes straight to David.</p>
+            <p class="note">Your message is stored in David’s Netlify site dashboard so he can reply.</p>
           </form>
 
           <div class="feedback success" id="formSuccess">
@@ -231,6 +223,9 @@
     var form = document.getElementById('contactForm');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      var submit = form.querySelector('button[type=submit]');
+      submit.disabled = true;
+      document.getElementById('formError').style.display = 'none';
       var data = new FormData(form);
       var body = new URLSearchParams(data).toString();
       fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
@@ -242,6 +237,7 @@
           ok.scrollIntoView({ block: 'center' });
         })
         .catch(function () {
+          submit.disabled = false;
           document.getElementById('formError').style.display = 'block';
         });
     });

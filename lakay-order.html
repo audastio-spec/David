@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Lakay — David Frederick</title>
+  <meta name="description" content="Enter your shipping details for a signed copy of Lakay, then pay David Frederick with Cash App.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f6f1e8;color:#1b2838;font:16px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif}a{color:inherit}header{border-bottom:1px solid #d9d3c9;background:#f6f1e8}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:19px;padding-bottom:19px}.wrap{max-width:1120px;margin:auto;padding:0 30px}.logo{font:500 22px Newsreader,Georgia,serif;text-decoration:none}.back{font-size:14px;text-decoration:none;border-bottom:1px solid #b58a44}.eyebrow{color:#9a4434;text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700}main{padding-top:54px;padding-bottom:80px}h1{font:500 clamp(42px,6vw,72px)/1 Newsreader,Georgia,serif;letter-spacing:-.02em;margin:20px 0}h2{font:500 28px/1.2 Newsreader,Georgia,serif;margin:0 0 18px}.lede{font:300 22px/1.5 Newsreader,Georgia,serif;max-width:660px;color:#34404d}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;margin-top:48px;align-items:start}.card{background:#fff;border:1px solid #d9d3c9;padding:clamp(26px,4vw,46px);box-shadow:0 25px 55px -40px #1b2838}.field{margin:0 0 18px}.field label{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:7px}.field input,.field select{display:block;width:100%;font:16px inherit;font-family:inherit;font-size:16px;padding:12px 14px;background:#faf7f0;border:1px solid #b9b2a7;border-radius:2px;color:#1b2838}.field input:focus,.field select:focus{outline:2px solid #b58a44;outline-offset:2px}.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.button{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:2px;background:#1b2838;color:#fff;text-decoration:none;font:600 15px/1.4 inherit;font-family:inherit;font-size:15px;padding:15px 22px;cursor:pointer}.button:hover{background:#9a4434}.button:disabled{opacity:.55;cursor:wait}.help{font-size:13px;color:#605b53;line-height:1.55}.error{display:none;color:#a12f24;font-size:14px}.hp{position:absolute;left:-9999px}.steps{margin:0;padding-left:22px}.steps li{padding:0 0 16px 6px}.summary{background:#16222f;color:#f0ece2;padding:28px 30px}.summary strong{font-size:24px}.summary p{color:#d9d2c6}.success{display:none}.reference{display:inline-block;background:#faf7f0;border:1px solid #d9d3c9;padding:7px 12px;font-weight:700;letter-spacing:.05em}.cash{margin-top:22px}.fine{font-size:13px;color:#605b53;margin-top:22px}footer{background:#13202c;color:#d9d2c6;padding:32px 0;font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:760px){.grid{grid-template-columns:1fr;gap:26px}.wrap{padding-left:20px;padding-right:20px}.row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a class="logo" href="index.html">David Frederick</a><a class="back" href="lakay.html">← Back to Lakay</a></div></header>
+  <main class="wrap">
+    <div class="eyebrow">Signed paperback · Cash App</div>
+    <h1>Order your copy of <em>Lakay.</em></h1>
+    <p class="lede">Enter your shipping details here, then pay through David Frederick’s Cash App Business profile. One signed paperback is $24.</p>
+    <div class="grid">
+      <div>
+        <form class="card" name="lakay-cashapp-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="orderForm">
+          <h2>Shipping details</h2>
+          <input type="hidden" name="form-name" value="lakay-cashapp-order">
+          <input type="hidden" name="order-reference" id="orderReference">
+          <input type="hidden" name="item" value="Lakay signed paperback">
+          <input type="hidden" name="amount-usd" value="24">
+          <p class="hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><label for="buyerName">Full name</label><input id="buyerName" name="name" autocomplete="name" maxlength="120" required></div>
+          <div class="field"><label for="buyerEmail">Email</label><input id="buyerEmail" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="field"><label for="cashName">Cash App name or $Cashtag used to pay</label><input id="cashName" name="cashapp-name" maxlength="100" required><div class="help">This helps David match your order with your payment.</div></div>
+          <div class="field"><label for="street">Street address</label><input id="street" name="street-address" autocomplete="address-line1" maxlength="160" required></div>
+          <div class="field"><label for="street2">Apartment, suite, or unit (optional)</label><input id="street2" name="address-line-2" autocomplete="address-line2" maxlength="100"></div>
+          <div class="row"><div class="field"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" maxlength="100" required></div><div class="field"><label for="region">State or region</label><input id="region" name="state-region" autocomplete="address-level1" maxlength="100" required></div></div>
+          <div class="row"><div class="field"><label for="postal">Postal code</label><input id="postal" name="postal-code" autocomplete="postal-code" maxlength="30" required></div><div class="field"><label for="country">Country</label><input id="country" name="country" autocomplete="country-name" maxlength="100" required></div></div>
+          <p class="help">These details are stored with your order in David’s Netlify site dashboard. Do not enter card or bank details here.</p>
+          <button class="button" type="submit" id="submitOrder">Save details and continue to payment →</button>
+          <p class="error" id="orderError" role="alert">Your details could not be saved. Please try again or email <a href="mailto:Fdavid.dreamer@gmail.com">David</a> before paying.</p>
+        </form>
+        <div class="card success" id="orderSuccess" role="status" aria-live="polite">
+          <h2>Details saved. Now pay with Cash App.</h2>
+          <p>Your order reference is <span class="reference" id="displayReference"></span>. Keep this page open until you finish payment.</p>
+          <ol class="steps"><li>Open David Frederick’s Cash App Business profile using the button below. Confirm the recipient is <strong>$thegent3</strong>.</li><li>Enter <strong>$24</strong> for one signed paperback. Add your order reference in the payment note if Cash App offers one.</li><li>David will match the Cash App payment with the shipping details you just entered before shipping.</li></ol>
+          <a class="button cash" href="https://cash.app/$thegent3" target="_blank" rel="noopener noreferrer">Open Cash App to pay $24 ↗</a>
+          <p class="fine">Your order is awaiting payment. Saving this form does not charge you or confirm a purchase. Questions? <a href="mailto:Fdavid.dreamer@gmail.com">Email David</a>.</p>
+        </div>
+      </div>
+      <aside><div class="summary"><h2>Order summary</h2><p><em>Lakay</em> · one personally signed paperback</p><strong>$24 USD</strong><p>Cash App payment is made in a separate step.</p></div><p class="fine">Card checkout is temporarily unavailable while Stripe reviews the account. David confirms each Cash App payment manually.</p></aside>
+    </div>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> David Frederick</span><a href="contact.html">Contact David</a></div></footer>
+  <script>
+    (function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      var bytes = new Uint8Array(5);
+      crypto.getRandomValues(bytes);
+      var reference = 'LK-' + Array.from(bytes, function (b) { return b.toString(16).padStart(2, '0'); }).join('').toUpperCase();
+      document.getElementById('orderReference').value = reference;
+      var form = document.getElementById('orderForm');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var button = document.getElementById('submitOrder');
+        var error = document.getElementById('orderError');
+        button.disabled = true;
+        error.style.display = 'none';
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+          .then(function (response) { if (!response.ok) throw new Error('Order was not saved');
+            document.getElementById('displayReference').textContent = reference;
+            form.style.display = 'none';
+            document.getElementById('orderSuccess').style.display = 'block';
+            document.getElementById('orderSuccess').scrollIntoView({ block: 'start' });
+          })
+          .catch(function () { button.disabled = false; error.style.display = 'block'; });
+      });
+    })();
+  </script>
+</body>
+</html>

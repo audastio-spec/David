@@ -12,4 +12,4 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Content-Security-Policy = "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; form-action 'self'"
 
-# The contact form in contact.html also requires form detection to be enabled in Netlify.
+# Netlify Forms detection is enabled for this site; contact and Lakay order forms are parsed at deploy time.
